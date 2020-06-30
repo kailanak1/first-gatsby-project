@@ -5,6 +5,7 @@ import React from "react"
 const Header = () => (
   <header>
     <div className="container">
+      <div className="inner-header">
       <div className="logo">
         <Link to="/">Kailana</Link>
       </div>
@@ -15,11 +16,9 @@ const Header = () => (
           <Link to="/contact">Contact</Link>
         </nav>
       </div>
+      </div>
     </div>
-
   </header>
 )
-
-
 
 export default Header
