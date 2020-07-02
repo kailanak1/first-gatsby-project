@@ -23,8 +23,9 @@ const Banner = () => {
                     <Img fluid={data.kailanaProfile.childImageSharp.fluid} />
                     </div>
                 </div>
-                <div className="scroll"></div>
-                <span>Scroll Down</span>
+                <div className="scroll">
+                    <span>Scroll Down</span>
+                </div>
             </div>
         </div>
     )

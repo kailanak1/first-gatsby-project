@@ -16,24 +16,27 @@ const About = () => {
     }
   `)
     return (
-        <div className="about">
+        <div className="about-blurb">
             <div className="container">
                 <div className="inner-blurb">
                  <div className="content">
                      <h3>About me</h3>
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas est luctus, suscipit orci id, posuere orci. Nullam neque nunc, faucibus id nibh eu, auctor fringilla odio. Integer varius mollis felis. Quisque non est id nibh malesuada faucibus. Quisque eget orci non odio gravida vestibulum. Praesent turpis ex, congue a sem quis, ornare scelerisque nunc. Sed eget placerat libero.</p>
-                     <div className="btn-row"></div>
-                     <Link to ="/project">See My Projects</Link>
+                     <div className="btn-row">
+                     <Link to="/project">See My Projects</Link>
+                     </div>
                  </div>
-                </div>
+                
                 <div className="images">
                     <div className="top-right">
-                        <Img fluid={data.kailanaAbout.childImageSharp.fluid}></Img>
+                        <div className="circle">
+                            <Img fluid={data.kailanaAbout.childImageSharp.fluid}
+                            ></Img>
+                        </div>
                     </div>
                 </div>
-           
             </div>
-          
+            </div>
         </div>
     )
 }
