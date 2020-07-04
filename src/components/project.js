@@ -23,6 +23,8 @@ const Project = () => {
              <div className="project-content">
                  <div className="project-square">
                      <div className="project-title">Project 1</div>
+                     <div className="project-image">insert image here</div>
+                     <div className="project-desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                  </div>
                  <div className="project-square">
                      <div className="project-title">Project 2</div>

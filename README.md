@@ -1,3 +1,11 @@
+
+# Kailana Portfolio Website 
+This is my portfolio website made with Gatsby. 
+
+## Status 
+Under Construction
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
