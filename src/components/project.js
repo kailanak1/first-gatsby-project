@@ -13,6 +13,27 @@ const Project = () => {
           }
         }
       }
+      stellarpic: file(relativePath: { eq: "stellar.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      recipepic: file(relativePath: { eq: "recipe-app.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      mealp: file(relativePath: { eq: "mealp.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
     return (
@@ -26,17 +47,35 @@ const Project = () => {
                      <div className="project-image">
                          <Img fluid={data.davidpic.childImageSharp.fluid}/>
                      </div>
-                     <div className="project-desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                     <div className="project-desc">Personal Website. Rails   React/Redux  EmailJS</div>
                      </a>
                  </div> 
                  <div className="project-square">
+                     <a href="https://stellar-778e3.web.app/" target="_blank" rel="noopener noreferrer">
                      <div className="project-title">Project 2</div>
+                     <div className="project-image">
+                         <Img fluid={data.stellarpic.childImageSharp.fluid}/>
+                     </div>
+                     <div className="project-desc">Astro calendar. Rails   React  APIs</div>
+                     </a>
                  </div>
                  <div className="project-square">
+                 <a href="https://github.com/kailanak1/recipe-blog-frontend" target="_blank" rel="noopener noreferrer">
                      <div className="project-title">Project 3</div>
+                     <div className="project-image">
+                         <Img fluid={data.recipepic.childImageSharp.fluid}/>
+                     </div>
+                     <div className="project-desc">Recipe app. Rails React</div>
+                     </a>
                  </div>
                  <div className="project-square">
+                     <a href="https://github.com/kailanak1/mealp" target="_blank" rel="noopener noreferrer">
                      <div className="project-title">Project 4</div>
+                     <div className="project-image">
+                         <Img fluid={data.mealp.childImageSharp.fluid}/>
+                         <div className="project-desc">Yelp-like app. Rails</div>
+                     </div>
+                     </a>
                  </div>
              </div>
             
