@@ -65,7 +65,7 @@ const Project = () => {
                      <div className="project-image">
                          <Img fluid={data.recipepic.childImageSharp.fluid}/>
                      </div>
-                     <div className="project-desc">Recipe app. Rails React</div>
+                     <div className="project-desc">Recipe app. Rails React Boostrap</div>
                      </a>
                  </div>
                  <div className="project-square">
@@ -73,7 +73,7 @@ const Project = () => {
                      <div className="project-title">Project 4</div>
                      <div className="project-image">
                          <Img fluid={data.mealp.childImageSharp.fluid}/>
-                         <div className="project-desc">Yelp-like app. Rails</div>
+                         <div className="project-desc">Yelp-like app. Rails </div>
                      </div>
                      </a>
                  </div>
