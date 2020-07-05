@@ -16,12 +16,12 @@ body {
 }
 
 .container {
-    width: 1640px; 
-    min-width: 1640px; 
+    width: 100%; 
+    min-width: 100%; 
     margin: 0 auto; 
-    @media(max-width: 1440px){
-        width: 1640px; 
-        min-width: 1640px; 
+    @media(max-width: 100%){
+        width: 100%; 
+        min-width: 100%; 
     }
     @media(max-width: 1280px){
         width: 976px; 
@@ -96,7 +96,7 @@ header {
         text-align: center;
         mix-blend-mode: difference;
         z-index: 9;
-        @media (max-width: 1440px) {
+        @media (max-width: 100%) {
           font-size: 4.4rem;
           letter-spacing: 36px;
         }
@@ -104,7 +104,7 @@ header {
       .main-image {
         width: 536px;
         margin: 0 auto;
-        @media (max-width: 1440px) {
+        @media (max-width: 100%) {
           width: 436px;
         }
       }
@@ -133,7 +133,7 @@ header {
           align-items: center;
           .content {
             width: 33%;
-            @media (max-width: 1440px) {
+            @media (max-width: 100%) {
               width: 40%;
             }
             h3 {
@@ -166,7 +166,7 @@ header {
             position: relative;
             border-radius: 50%;
             z-index: 7;
-            @media (max-width: 1440px) {
+            @media (max-width: 100%) {
               height: 400px;
             }
             .top-right {
@@ -174,7 +174,7 @@ header {
               width: 460px;
               right: 0;
               z-index: 4;
-              @media (max-width: 1440px) {
+              @media (max-width: 100%) {
                 width: 360px;
               }
             }
@@ -230,14 +230,20 @@ header {
               margin: 0;
         }
         .project-image {
-            height: 50px; 
-            width: 50px; 
+            height: 75px; 
+            width: 75px; 
+            margin-bottom: 30px;
+            margin-left: 40px;
         }
         .project-desc {
             font-weight: 100;
             font-size: 1rem;
             letter-spacing: 1.5px;
             margin: 0;
-            text-align: center;
+            text-align: justify;
+        }
+        a {
+            text-decoration: none;
+            color: $black;
         }
     }
