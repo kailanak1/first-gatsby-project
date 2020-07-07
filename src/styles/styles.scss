@@ -255,6 +255,12 @@ header {
         padding: 48px 0;
         background: $white;
         position: relative;
+        p {
+            font-size: 1rem;
+            line-height: 2rem;
+            font-weight: 300;
+            margin: 40px 0 72px;
+          }
         .contact-title{
             font-weight: 700;
             text-transform: uppercase;
@@ -262,4 +268,18 @@ header {
             letter-spacing: 1.5px;
             margin: 0;
         }
+        input, textarea {
+            font    : $font, 1.4em;
+            border  : none;
+            padding : 0 10px;
+            margin  : 0;
+            width   : 100%;
+            min-height: 50px;
+            background : $off-white;
+          }
+          button {
+              font: $font;
+          }
+      
+
     }
