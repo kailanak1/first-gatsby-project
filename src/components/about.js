@@ -22,9 +22,6 @@ const About = () => {
                  <div className="content">
                      <h3>About me</h3>
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas est luctus, suscipit orci id, posuere orci. Nullam neque nunc, faucibus id nibh eu, auctor fringilla odio. Integer varius mollis felis. Quisque non est id nibh malesuada faucibus. Quisque eget orci non odio gravida vestibulum. Praesent turpis ex, congue a sem quis, ornare scelerisque nunc. Sed eget placerat libero.</p>
-                     <div className="btn-row">
-                     <Link to="/project">See My Projects</Link>
-                     </div>
                  </div>
                 
                 <div className="images">

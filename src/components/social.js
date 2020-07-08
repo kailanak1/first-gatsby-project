@@ -1,33 +1,33 @@
 import React from "react"; 
 import {useStaticQuery, graphql} from "gatsby"; 
 import Img from "gatsby-image";
-import { Link } from "gatsby";
+
 
 const Social = () => {
     const data = useStaticQuery(graphql`
     query {
-      davidpic: file(relativePath: { eq: "david-pic.jpg" }) {
+      devto: file(relativePath: { eq: "devtoicon.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      stellarpic: file(relativePath: { eq: "stellar.png" }) {
+      github: file(relativePath: { eq: "github.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      recipepic: file(relativePath: { eq: "recipe-app.png" }) {
+      linkedin: file(relativePath: { eq: "linkedin.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      mealp: file(relativePath: { eq: "mealp.png" }) {
+      resume: file(relativePath: { eq: "resume_screenshot.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -39,47 +39,46 @@ const Social = () => {
     return (
         <div className="project-blurb" id="project">
         <div className="container">
+        <h3>More</h3>
             <div className="row">
              <div className="project-content">
                  <div className="project-square">
-                    <a href="https://david-quora-frontend.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
-                        <div className="project-title">Project 1</div>
+                    <a href="https://dev.to/kahawaiikailana" target="_blank" rel="noopener noreferrer">
+                        <div className="project-title">DevTo</div>
                      <div className="project-image">
-                         <Img fluid={data.davidpic.childImageSharp.fluid}/>
+                         <Img fluid={data.devto.childImageSharp.fluid}/>
                      </div>
-                     <div className="project-desc">Personal Website. Rails   React/Redux  EmailJS</div>
+                     <div className="project-desc">Tech Blog</div>
                      </a>
                  </div> 
                  <div className="project-square">
-                     <a href="https://stellar-778e3.web.app/" target="_blank" rel="noopener noreferrer">
-                     <div className="project-title">Project 2</div>
+                     <a href="https://github.com/kailanak1?tab=repositories" target="_blank" rel="noopener noreferrer">
+                     <div className="project-title">Github</div>
                      <div className="project-image">
-                         <Img fluid={data.stellarpic.childImageSharp.fluid}/>
+                         <Img fluid={data.github.childImageSharp.fluid}/>
                      </div>
-                     <div className="project-desc">Astro calendar. Rails   React  APIs</div>
+                     <div className="project-desc">See more projects</div>
                      </a>
                  </div>
                  <div className="project-square">
                  <a href="https://github.com/kailanak1/recipe-blog-frontend" target="_blank" rel="noopener noreferrer">
-                     <div className="project-title">Project 3</div>
+                     <div className="project-title">LinkedIn</div>
                      <div className="project-image">
-                         <Img fluid={data.recipepic.childImageSharp.fluid}/>
+                         <Img fluid={data.linkedin.childImageSharp.fluid}/>
                      </div>
-                     <div className="project-desc">Recipe app. Rails React Boostrap</div>
+                     <div className="project-desc">Connect with me!</div>
                      </a>
                  </div>
                  <div className="project-square">
-                     <a href="https://github.com/kailanak1/mealp" target="_blank" rel="noopener noreferrer">
-                     <div className="project-title">Project 4</div>
+                     <a href="https://docs.google.com/document/d/1E2oOzOY-gkdFxNVIz5dQDOM4oeWHvHlJPQmNQMoMUNQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                     <div className="project-title">Resume</div>
                      <div className="project-image">
-                         <Img fluid={data.mealp.childImageSharp.fluid}/>
-                         <div className="project-desc">Yelp-like app. Rails </div>
+                         <Img fluid={data.resume.childImageSharp.fluid}/>
+                         <div className="project-desc">Check it out</div>
                      </div>
                      </a>
                  </div>
              </div>
-            
-        
         </div>
         </div>
     </div>
