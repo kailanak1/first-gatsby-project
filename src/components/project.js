@@ -79,8 +79,6 @@ const Project = () => {
                      </a>
                  </div>
              </div>
-            
-        
         </div>
         </div>
     </div>

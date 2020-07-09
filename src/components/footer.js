@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="footer-class">
                 <div className="container">
                     <div className = "inner">
-                        :)
+                    © Kailana Kahawaii, 2020. 
                     </div>
                 </div>
             </div>

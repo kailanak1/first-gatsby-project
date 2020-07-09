@@ -21,7 +21,9 @@ const About = () => {
                 <div className="inner-blurb">
                  <div className="content">
                      <h3>About me</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas est luctus, suscipit orci id, posuere orci. Nullam neque nunc, faucibus id nibh eu, auctor fringilla odio. Integer varius mollis felis. Quisque non est id nibh malesuada faucibus. Quisque eget orci non odio gravida vestibulum. Praesent turpis ex, congue a sem quis, ornare scelerisque nunc. Sed eget placerat libero.</p>
+                     <p>Hi! I'm Kailana. I'm from Maui, Hawai'i. I used to be an English teacher, but now I code in Seattle. I love the beach, hiking, and reading. My favorite food is soybeans. I got into coding through RenPy and have been writing up code ever since.
+                     Right now, I work with ReactJS and Ruby on Rails. I also write blog articles to sharpen my technical writing skills.
+                     I also really love is travel and good food. I'm always down to check out a new restaurant or explore an exciting place on a whim.</p>
                  </div>
                 
                 <div className="images">
