@@ -8,6 +8,7 @@ import About from '../components/about'
 import Project from '../components/project'
 import Social from '../components/social'
 import Contact from '../components/contact'
+import Footer from '../components/footer'
 
 const IndexPage = () => (
   <div>
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <Project />
     <Social />
     <Contact />
+    <Footer />
   </div>
 )
 
