@@ -1,20 +1,13 @@
 import React, { useState } from "react"; 
-import {useStaticQuery, graphql} from "gatsby"; 
-import Img from "gatsby-image";
-import { Link } from "gatsby";
 
-const Contact = () => {
-    const data = useStaticQuery(graphql`
-    query {
-      kailanaAbout: file(relativePath: { eq: "about_me.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+function encode(data) {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&')
+  }
+
+export default function Contact(){
+ 
   const [state, setState] = React.useState({})
 
   const handleChange = (e) => {
@@ -28,7 +21,7 @@ const Contact = () => {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'form-name': form.getAttribute('name'),
+        'contact': form.getAttribute('name'),
         ...state,
       }),
     })
@@ -41,6 +34,7 @@ const Contact = () => {
               <div className="contact-title">Contact</div>
               <div className="contact-form">
                 <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                <input type="hidden" name="form-name" value="contact" />
                     <p>
                         <label>Your Name: <input type="text" name="name" onChange={handleChange}/></label>   
                     </p>
@@ -51,7 +45,7 @@ const Contact = () => {
                         <label>Message: <textarea name="message" onChange={handleChange}></textarea></label>
                     </p>
                     <p>
-                        <button className="submit-button" type="submit" >Send</button>
+                        <button className="submit-button" type="submit">Send</button>
                     </p>
               </form>
              </div>
@@ -60,4 +54,3 @@ const Contact = () => {
     )
 }
 
-export default Contact 
