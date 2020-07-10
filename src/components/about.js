@@ -22,7 +22,7 @@ const About = () => {
                  <div className="content">
                      <h3>About me</h3>
                      <p>Hi! I'm Kailana. I'm from Maui, Hawai'i. I used to be an English teacher, but now I code in Seattle. I love the beach, hiking, and reading. My favorite food is soybeans. I got into coding through RenPy and have been writing up code ever since.
-                     Right now, I work with ReactJS and Ruby on Rails. I also write blog articles to sharpen my technical writing skills.
+                     Right now, I work with ReactJS and Ruby on Rails and write about it on my DevTo blog.
                      I also really love is travel and good food. I'm always down to check out a new restaurant or explore an exciting place on a whim.</p>
                  </div>
                 
