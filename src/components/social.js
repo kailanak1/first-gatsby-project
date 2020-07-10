@@ -61,7 +61,7 @@ const Social = () => {
                      </a>
                  </div>
                  <div className="project-square">
-                 <a href="https://github.com/kailanak1/recipe-blog-frontend" target="_blank" rel="noopener noreferrer">
+                 <a href="https://www.linkedin.com/in/kailana-kahawaii-09933a195/" target="_blank" rel="noopener noreferrer">
                      <div className="project-title">LinkedIn</div>
                      <div className="project-image">
                          <Img fluid={data.linkedin.childImageSharp.fluid}/>
