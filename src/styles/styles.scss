@@ -31,9 +31,11 @@ body {
 header {
     height: 80px;
     width: 100%;
-    position: absolute; 
+    position: relative; 
     top: 0px; 
     z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
     .inner-header{
         display: flex;
         align-items: center;
@@ -274,7 +276,7 @@ header {
         input, textarea {
             font    : $font, 1.4em;
             border  : none;
-            padding : 0 10px;
+            padding : 0;
             margin  : 0;
             width   : 100%;
             min-height: 50px;

@@ -28,6 +28,7 @@ export default function Contact(){
     })
       .then(() => navigate(form.getAttribute('action')))
       .catch((error) => alert(error))
+      
   }
     return (
         <div className="contact" id="contact">
