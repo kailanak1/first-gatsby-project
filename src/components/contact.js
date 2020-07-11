@@ -31,8 +31,8 @@ export default function Contact(){
             <div className="container">
               <div className="contact-title">Contact</div>
               <div className="contact-form">
-                <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-                <input type="hidden" name="form-name" value="contact" />
+                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+                <input type="hidden" name="contact" value="contact" />
                     <p>
                         <label>Your Name: <input type="text" name="name" onChange={handleChange}/></label>   
                     </p>
