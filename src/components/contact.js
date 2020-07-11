@@ -15,21 +15,17 @@ export default function Contact(){
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'contact': form.getAttribute('name'),
-        ...state,
-      }),
+  const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
     })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch((error) => alert(error))
-      
-  }
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
     return (
         <div className="contact" id="contact">
             <div className="container">

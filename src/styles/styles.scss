@@ -8,22 +8,13 @@ $maroon: #83333e;
 $off-white: #f2f4f5;
 
 
-body {
+html, body {
     font-family: $font; 
     font-size: 16px;
-    padding: 0;
-    margin: 0;
-  
 }
 
 .container {
     width: 100%; 
-    min-width: 100%; 
-    margin: 1%; 
-    @media(max-width: 100%){
-        width: 100%; 
-        min-width: 100%; 
-    }
 }
 
 //header 
@@ -259,6 +250,7 @@ header {
         padding: 48px 0;
         background: $white;
         position: relative;
+        width: 100%;
         p {
             font-size: 1rem;
             line-height: 2rem;
