@@ -29,7 +29,7 @@ const About = () => {
                 <div className="images">
                     <div className="top-right">
                         <div className="circle">
-                            <Img fluid={data.kailanaAbout.childImageSharp.fluid}
+                            <Img alt="kailana about photo" fluid={data.kailanaAbout.childImageSharp.fluid}
                             ></Img>
                         </div>
                     </div>
