@@ -46,7 +46,7 @@ const Social = () => {
                     <a href="https://dev.to/kahawaiikailana" target="_blank" rel="noopener noreferrer">
                         <div className="project-title">DevTo</div>
                      <div className="project-image">
-                         <Img fluid={data.devto.childImageSharp.fluid}/>
+                         <Img alt="devto logo" fluid={data.devto.childImageSharp.fluid}/>
                      </div>
                      <div className="project-desc">Tech Blog</div>
                      </a>
@@ -55,7 +55,7 @@ const Social = () => {
                      <a href="https://github.com/kailanak1?tab=repositories" target="_blank" rel="noopener noreferrer">
                      <div className="project-title">Github</div>
                      <div className="project-image">
-                         <Img fluid={data.github.childImageSharp.fluid}/>
+                         <Img alt="github logo" fluid={data.github.childImageSharp.fluid}/>
                      </div>
                      <div className="project-desc">See more projects</div>
                      </a>
@@ -64,7 +64,7 @@ const Social = () => {
                  <a href="https://www.linkedin.com/in/kailana-kahawaii-09933a195/" target="_blank" rel="noopener noreferrer">
                      <div className="project-title">LinkedIn</div>
                      <div className="project-image">
-                         <Img fluid={data.linkedin.childImageSharp.fluid}/>
+                         <Img alt="linkedin logo" fluid={data.linkedin.childImageSharp.fluid}/>
                      </div>
                      <div className="project-desc">Connect with me!</div>
                      </a>
@@ -74,7 +74,7 @@ const Social = () => {
                      <div className="project-title">Resume</div>
                      <div className="project-image">
                          <Img fluid={data.resume.childImageSharp.fluid}/>
-                         <div className="project-desc">Check it out</div>
+                         <div alt="resume snapshot" className="project-desc">Check it out</div>
                      </div>
                      </a>
                  </div>
