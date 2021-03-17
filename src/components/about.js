@@ -25,7 +25,9 @@ const About = () => {
                      Right now, I work with ReactJS and Ruby on Rails and write about it on my DevTo blog.
                      What I also really love is travel and good food. I'm always down to check out a new restaurant or explore an exciting place on a whim.</p>
                  </div>
-                
+                <div>
+                  <p>{`{{contact.email}}`}</p>
+                </div>
                 <div className="images">
                     <div className="top-right">
                         <div className="circle">

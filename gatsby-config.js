@@ -27,6 +27,7 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/kailana_icon.jpeg`, // This path is relative to the root of the site.
       },
+      
     },
     `gatsby-plugin-sass`
     // this (optional) plugin enables Progressive Web App + Offline functionality
